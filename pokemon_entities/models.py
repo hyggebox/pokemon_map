@@ -30,7 +30,7 @@ class PokemonEntity(models.Model):
                                        blank=True, null=True)
     disappeared_at = models.DateTimeField('время исчезновения',
                                           blank=True, null=True)
-    level = models.IntegerField('уровень')
+    level = models.IntegerField('уровень', blank=True, null=True)
     health = models.IntegerField('здоровье', blank=True, null=True)
     strength = models.IntegerField('атака', blank=True, null=True)
     defence = models.IntegerField('защита', blank=True, null=True)
